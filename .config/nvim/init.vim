@@ -10,3 +10,7 @@ cnoremap <expr> <Right> pumvisible() ? '<C-n>' : '<Right>'
 
 runtime luarc.lua
 
+" highlight-groups, используемые vim-lsp для подсветки экспортнутых erlang-фукнкций
+" hi! link erlangLocalFuncCall Normal
+" hi! link LspSemanticFunction Function
+
