@@ -1,6 +1,12 @@
 # Deps
 
-[vimconfig](https://github.com/okayno14/vimconfig)
+repos:
+
+* [vimconfig](https://github.com/okayno14/vimconfig)
+
+apps:
+
+* go (harrisoncramer/gitlab.nvim)
 
 # package
 
