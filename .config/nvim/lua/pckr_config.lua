@@ -16,8 +16,6 @@ end
 
 bootstrap_pckr()
 
-
--- TODO Вот этот урод запрещает загрузить vim-плагины: тупо после него ничего не работает
 require('pckr').add{
     {
       "harrisoncramer/gitlab.nvim",
