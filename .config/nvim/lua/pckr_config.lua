@@ -31,6 +31,15 @@ require('pckr').add{
         require("diffview") -- We require some global state from diffview
         require("gitlab").setup()
       end
+    },
+    {
+      "denialofsandwich/sudo.nvim",
+      requires = {
+        "MunifTanjim/nui.nvim",
+      },
+      config = function()
+        require("sudo").setup({commands = true})
+      end
     }
 }
 
