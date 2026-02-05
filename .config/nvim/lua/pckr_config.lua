@@ -17,6 +17,7 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
+    'projekt0n/caret.nvim';
     {
       "harrisoncramer/gitlab.nvim",
       requires = {
