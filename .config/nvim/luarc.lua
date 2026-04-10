@@ -11,5 +11,4 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-vim.cmd.colorscheme "catppuccin-mocha"
 require("pckr_config")
