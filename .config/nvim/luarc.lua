@@ -12,4 +12,3 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require("pckr_config")
-require("vim._core.ui2").enable({})
