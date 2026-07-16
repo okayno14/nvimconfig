@@ -20,6 +20,7 @@ require('pckr').add{
     'projekt0n/caret.nvim';
     'necrogoru/shades-of-purple.nvim';
     'chentoast/marks.nvim';
+    'mitander/flume.nvim';
     {
       "harrisoncramer/gitlab.nvim",
       requires = {
