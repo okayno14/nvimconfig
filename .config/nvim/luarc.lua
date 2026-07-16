@@ -14,3 +14,10 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require("pckr_config")
+
+require'marks'.setup {
+  default_mappings = true,
+  signs = true,
+  mappings = {}
+}
+

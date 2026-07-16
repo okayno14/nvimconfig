@@ -19,6 +19,7 @@ bootstrap_pckr()
 require('pckr').add{
     'projekt0n/caret.nvim';
     'necrogoru/shades-of-purple.nvim';
+    'chentoast/marks.nvim';
     {
       "harrisoncramer/gitlab.nvim",
       requires = {
