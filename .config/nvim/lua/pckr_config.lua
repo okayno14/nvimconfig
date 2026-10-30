@@ -19,6 +19,7 @@ bootstrap_pckr()
 require('pckr').add{
     'projekt0n/caret.nvim';
     'necrogoru/shades-of-purple.nvim';
+    'senran101604/neotrix.vim';
     'chentoast/marks.nvim';
     'mitander/flume.nvim';
     {
