@@ -17,6 +17,7 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
+    'sainnhe/everforest';
     'projekt0n/caret.nvim';
     'necrogoru/shades-of-purple.nvim';
     'chentoast/marks.nvim';
