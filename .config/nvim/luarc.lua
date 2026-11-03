@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = {"elixir", "erlang"},
+  ensure_installed = {"elixir", "erlang", "nix"},
   highlight = {
     -- `false` will disable the whole extension
     enable = true,
