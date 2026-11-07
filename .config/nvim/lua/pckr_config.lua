@@ -17,6 +17,8 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
+    'nvim-treesitter/nvim-treesitter';
+    'catppuccin/nvim';
     'safv12/andromeda';
     'andylvim-textobj-elixir';
     'powerman/vim-plugin-AnsiEsc';

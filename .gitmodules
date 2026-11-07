@@ -1,6 +1,0 @@
-[submodule ".config/nvim/pack/nvim-tresitter/start/nvim-treesitter"]
-	path = .config/nvim/pack/nvim-tresitter/start/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter.git
-[submodule ".config/nvim/pack/catppucin/start/catppucin"]
-	path = .config/nvim/pack/catppucin/start/catppucin
-	url = https://github.com/catppuccin/nvim.git
