@@ -19,10 +19,10 @@ bootstrap_pckr()
 require('pckr').add{
     'nvim-treesitter/nvim-treesitter';
     'catppuccin/nvim';
-    'safv12/andromeda';
-    'andylvim-textobj-elixir';
+    'safv12/andromeda.vim';
+    'andyl/vim-textobj-elixir';
     'powerman/vim-plugin-AnsiEsc';
-    'edkoleverlang-motions';
+    'edkolev/erlang-motions';
     'gleam-lang/gleam.vim';
     'hrsh7th/vim-vsnip-integ';
     'kana/vim-textobj-user';
@@ -30,8 +30,8 @@ require('pckr').add{
     'letorbi/vim-colors-modern-borland';
     'aklt/plantuml-syntax';
     's3rvac/vim-syntax-redminewiki.git';
-    'regularhunter/builder_dark';
-    'tibabit/start/vim-templates';
+    'regularhunter/builder_dark.vim';
+    'tibabit/vim-templates';
     'tpope/vim-commentary';
     'tpope/vim-dadbod';
     'tpope/vim-fugitive';
