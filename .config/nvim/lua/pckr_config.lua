@@ -30,7 +30,7 @@ require('pckr').add{
     'letorbi/vim-colors-modern-borland';
     'aklt/plantuml-syntax';
     's3rvac/vim-syntax-redminewiki.git';
-    'regularhunter/builder_dark.vim';
+    'regularhunter/builder-dark.vim';
     'tibabit/vim-templates';
     'tpope/vim-commentary';
     'tpope/vim-dadbod';
