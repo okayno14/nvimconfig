@@ -24,6 +24,7 @@ require('pckr').add{
     'powerman/vim-plugin-AnsiEsc';
     'edkolev/erlang-motions';
     'gleam-lang/gleam.vim';
+    'hrsh7th/vim-vsnip';
     'hrsh7th/vim-vsnip-integ';
     'kana/vim-textobj-user';
     'kristijanhusak/vim-dadbod-ui';
