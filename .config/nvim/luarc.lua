@@ -1,3 +1,5 @@
+require("pckr_config")
+
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {"elixir", "erlang", "nix"},
   highlight = {
@@ -12,8 +14,6 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-
-require("pckr_config")
 
 require'marks'.setup {
   default_mappings = true,
