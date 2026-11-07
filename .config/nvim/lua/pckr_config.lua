@@ -17,6 +17,26 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
+    'safv12/andromeda';
+    'andylvim-textobj-elixir';
+    'powerman/vim-plugin-AnsiEsc';
+    'edkoleverlang-motions';
+    'gleam-lang/gleam.vim';
+    'hrsh7th/vim-vsnip-integ';
+    'kana/vim-textobj-user';
+    'kristijanhusak/vim-dadbod-ui';
+    'letorbi/vim-colors-modern-borland';
+    'aklt/plantuml-syntax';
+    's3rvac/vim-syntax-redminewiki.git';
+    'regularhunter/builder_dark';
+    'tibabit/start/vim-templates';
+    'tpope/vim-commentary';
+    'tpope/vim-dadbod';
+    'tpope/vim-fugitive';
+    'elixir-editors/vim-elixir';
+    'prabirshrestha/vim-lsp';
+    'vimwiki/vimwiki';
+    'w0ng/vim-hybrid';
     'sainnhe/everforest';
     'projekt0n/caret.nvim';
     'necrogoru/shades-of-purple.nvim';
@@ -29,12 +49,15 @@ require('pckr').add{
         "MunifTanjim/nui.nvim",
         "nvim-lua/plenary.nvim",
         "sindrets/diffview.nvim",
-        "stevearc/dressing.nvim", -- Recommended but not required. Better UI for pickers.
-        "nvim-tree/nvim-web-devicons", -- Recommended but not required. Icons in discussion tree.
+        -- Recommended but not required. Better UI for pickers.
+        "stevearc/dressing.nvim",
+        -- Recommended but not required. Icons in discussion tree.
+        "nvim-tree/nvim-web-devicons",
       },
       run = function() require("gitlab.server").build() end, -- Builds the Go binary
       config = function()
-        require("diffview") -- We require some global state from diffview
+        -- We require some global state from diffview
+        require("diffview")
         require("gitlab").setup()
       end
     },
