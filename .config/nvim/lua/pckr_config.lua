@@ -17,35 +17,18 @@ end
 bootstrap_pckr()
 
 require('pckr').add{
-    'nvim-treesitter/nvim-treesitter';
-    'catppuccin/nvim';
-    'safv12/andromeda.vim';
-    'andyl/vim-textobj-elixir';
-    'powerman/vim-plugin-AnsiEsc';
-    'edkolev/erlang-motions';
-    'gleam-lang/gleam.vim';
-    'hrsh7th/vim-vsnip';
-    'hrsh7th/vim-vsnip-integ';
-    'kana/vim-textobj-user';
-    'kristijanhusak/vim-dadbod-ui';
-    'letorbi/vim-colors-modern-borland';
-    'aklt/plantuml-syntax';
-    's3rvac/vim-syntax-redminewiki.git';
-    'regularhunter/builder-dark.vim';
     'tibabit/vim-templates';
     'tpope/vim-commentary';
-    'tpope/vim-dadbod';
     'tpope/vim-fugitive';
-    'elixir-editors/vim-elixir';
-    'prabirshrestha/vim-lsp';
     'vimwiki/vimwiki';
-    'w0ng/vim-hybrid';
-    'sainnhe/everforest';
-    'projekt0n/caret.nvim';
-    'necrogoru/shades-of-purple.nvim';
     'chentoast/marks.nvim';
-    'mitander/flume.nvim';
-    'rezniqov/soviet.nvim';
+    -- TODO force double quotes
+    {
+      'kristijanhusak/vim-dadbod-ui',
+      requires = {
+        'tpope/vim-dadbod';
+      }
+    },
     {
       "harrisoncramer/gitlab.nvim",
       requires = {
@@ -57,7 +40,8 @@ require('pckr').add{
         -- Recommended but not required. Icons in discussion tree.
         "nvim-tree/nvim-web-devicons",
       },
-      run = function() require("gitlab.server").build() end, -- Builds the Go binary
+      -- Builds the Go binary
+      run = function() require("gitlab.server").build() end,
       config = function()
         -- We require some global state from diffview
         require("diffview")
@@ -73,6 +57,38 @@ require('pckr').add{
         require("sudo").setup({commands = true})
       end
     }
+
+    -- lsp
+    'prabirshrestha/vim-lsp';
+    'hrsh7th/vim-vsnip-integ';
+    'hrsh7th/vim-vsnip';
+
+    -- Syntax
+    'nvim-treesitter/nvim-treesitter';
+    'aklt/plantuml-syntax';
+    's3rvac/vim-syntax-redminewiki.git';
+    'powerman/vim-plugin-AnsiEsc';
+    'edkolev/erlang-motions';
+    'gleam-lang/gleam.vim';
+    'elixir-editors/vim-elixir';
+    {
+      'andyl/vim-textobj-elixir',
+      requires = {
+        'kana/vim-textobj-user';
+      }
+    },
+
+    -- Colorschemes
+    'catppuccin/nvim';
+    'safv12/andromeda.vim';
+    'letorbi/vim-colors-modern-borland';
+    'regularhunter/builder-dark.vim';
+    'projekt0n/caret.nvim';
+    'sainnhe/everforest';
+    'necrogoru/shades-of-purple.nvim';
+    'mitander/flume.nvim';
+    'rezniqov/soviet.nvim';
+    'w0ng/vim-hybrid'
 }
 
 -- Активация pckr (lazy тоже) отключает loadplugins, из-за чего не работают
